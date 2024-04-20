@@ -15,6 +15,14 @@ export type OptionType = {
 	optionClassName?: string;
 };
 
+export type AppStylesType = {
+	fontFamily: OptionType;
+	fontSize: OptionType;
+	fontColor: OptionType;
+	containerWidth: OptionType;
+	bgColor: OptionType;
+};
+
 export const fontFamilyOptions: OptionType[] & {
 	optionClassName?: FontFamiliesClasses;
 } = [
@@ -174,6 +182,14 @@ export const defaultArticleState = {
 	backgroundColor: backgroundColors[0],
 	contentWidth: contentWidthArr[0],
 	fontSizeOption: fontSizeOptions[0],
+};
+
+export const defaultAppStyles = {
+	fontFamily: defaultArticleState.fontFamilyOption,
+	fontSize: defaultArticleState.fontSizeOption,
+	fontColor: defaultArticleState.fontColor,
+	containerWidth: defaultArticleState.contentWidth,
+	bgColor: defaultArticleState.backgroundColor,
 };
 
 export type ArticleStateType = typeof defaultArticleState;
