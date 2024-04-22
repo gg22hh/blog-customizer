@@ -15,6 +15,14 @@ export type OptionType = {
 	optionClassName?: string;
 };
 
+export type AppStylesType = {
+	fontFamily: OptionType;
+	fontSize: OptionType;
+	fontColor: OptionType;
+	containerWidth: OptionType;
+	bgColor: OptionType;
+};
+
 export const fontFamilyOptions: OptionType[] & {
 	optionClassName?: FontFamiliesClasses;
 } = [
